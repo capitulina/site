@@ -25,7 +25,6 @@ b {
     font-style: italic;
 }
 
-/* pagina ------------------------------------- */
 
 body {
     background-color: rgb(24, 24, 24);
@@ -94,8 +93,6 @@ body {
     background:  #0f5680;
 }
 
-/* botoes de scroll ------------------------------------- */
-
 #cabecalho h1{
     color: white;
     margin-top: 200px;
@@ -103,9 +100,6 @@ body {
     margin-bottom: 0px;
 }
 
-
-
-/* título do jogo e a logo ------------------------------------- */
 
 .cabeçalho {
     display: flex;
@@ -132,8 +126,6 @@ body {
     transform: scale(1.05, 1.05);
 }
 
-/* ------------------------------------------------------- */
-/* descrição do jogo ------------------------------------- */
 
 .bloco1 {
     display: flex;
@@ -145,19 +137,6 @@ body {
     color: white;
 }
 
-
-
-/* .bloco1 button { 
-    border-width: 1px;
-    margin: 2rem;
-    padding: 2rem;
-    transform: scale(1.1, 1);
-
-    background-image: url('assets/noGameOver.png');
-    color: #fafafa;
-    font-size: xx-large;
-                
-} */
 
 .bloco1 h2{
     align-self: center;
@@ -173,8 +152,6 @@ body {
     text-indent: 2rem;
 }
 
-/* --------------------------------------------------------- */
-/* fotos e screenshots ------------------------------------- */
 
 .scroll {
     display: flex;
@@ -197,8 +174,6 @@ body {
     transform: scale(1.05, 1.05);
 }
 
-/* -------------------------------------------------------- */
-/* backlog do jogo ------------------------------------- */
 
 .datas {
     padding-bottom: 5rem;
@@ -227,16 +202,13 @@ body {
     background-color: #1a89ca;
 }
 
-/* ------------------------------------------------------- */
-/* todos os .jogo ---------------------------------------- */
+
 
 .jogo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 3rem;
- 
-    /* border-top: 0.2rem dotted rgb(83, 80, 80);  */
 
 }
 
@@ -257,7 +229,7 @@ body {
     padding: 1rem;
 }
 
-/* ------------------------------------------------------- */
+
 
 .mari {
     display: flex;
@@ -268,20 +240,19 @@ body {
 }
 
 .mari img {
-    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o tamanho do contêiner */
-    height: auto; /* Permite que a altura da imagem seja ajustada proporcionalmente */
-    border-radius: 8px; /* Adiciona um leve arredondamento às bordas da imagem */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à imagem */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar a imagem */
+    max-width: 100%; 
+    height: auto;  
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
     padding-top: 30px;
 }
 
 .mari img:hover {
-    transform: scale(1.1); /* Amplia ligeiramente a imagem ao passar o mouse sobre ela */
+    transform: scale(1.1); 
 }
 
-/* ------------------------------------------------------- */
-/* icones ------------------------------------------------ */
+
 
 .icons {
     display: flex;
@@ -302,8 +273,7 @@ body {
     padding-right: 1.2rem;
 }
 
-/* ------------------------------------------------------- */
-/* tooltips ------------------------------------------------ */
+
 
 .tooltip {
     position: relative;
@@ -399,9 +369,7 @@ body {
     margin-left: 40px;
     color: white;
 }
-/* .diasz:hover {
-    background-color: #1a89ca;
-} */
+
 
 .titulos  h2{
     display: flex;
