@@ -1,0 +1,437 @@
+/* alteracoes universais ------------------------------------- */
+@font-face {
+    font-family: 'fontelimbo';
+    src: url('font.ttf') format(truetype); 
+}
+h1 {font-family: "fontelimbo", fantasy;
+font-size: xx-large;
+}
+h2, button { font-family: "fontelimbo", fantasy;
+    font-size: xx-large;
+
+}
+h3 { font-family: "calibri",sans-serif;
+        font-size: large;
+
+
+}
+p, div { font-family: "calibri", sans-serif;
+    
+}
+em {
+    font-weight: 900;
+}
+b {
+    font-style: italic;
+}
+
+/* pagina ------------------------------------- */
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+.pagina {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+#botaomain .bloco1 a{
+    display: inline-flex;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    background:#44b0ee;
+    color: white;
+    border-radius: 15px;
+    transition: background 500ms ease;
+    width: 400px;
+    max-height: 60x;
+    margin: 40px 709px;
+    margin-bottom: 150px;
+}
+
+#navbar {
+    font-family: "calibri", sans-serif;
+    background-color: rgb(11, 11, 10);
+    color: white;
+    position: fixed;
+    width: 2000px;
+    padding: 40px 0;
+}
+
+#navbaritems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#navbaritems li {
+    display: inline-block;
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+#navbaritems li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+#navbaritems li a:hover {
+    background-color: #555;
+    border-radius: 15px;
+}
+
+#botaomain .bloco1 a:hover{
+    cursor: pointer;
+    background:  #0f5680;
+}
+
+/* botoes de scroll ------------------------------------- */
+
+#cabecalho h1{
+    color: white;
+    margin-top: 200px;
+    font-size: 200px;
+    margin-bottom: 0px;
+}
+
+
+
+/* título do jogo e a logo ------------------------------------- */
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap : 15px;
+    color: white;
+
+}
+.cabeçalho h1 {
+    font-size: 5rem;
+}
+.cabeçalho h1:hover {
+    color: #413e3e;
+}
+
+.logo {
+    width: 4rem;
+}
+.logo:hover {
+    width: 4rem;
+    transform: scale(1.05, 1.05);
+}
+
+/* ------------------------------------------------------- */
+/* descrição do jogo ------------------------------------- */
+
+.bloco1 {
+    display: flex;
+    padding : 2rem;
+    flex-direction: row;
+    justify-content: flex-end;  
+    font-size: 25px;
+    font-style: italic bold;
+    color: white;
+}
+
+
+
+/* .bloco1 button { 
+    border-width: 1px;
+    margin: 2rem;
+    padding: 2rem;
+    transform: scale(1.1, 1);
+
+    background-image: url('assets/noGameOver.png');
+    color: #fafafa;
+    font-size: xx-large;
+                
+} */
+
+.bloco1 h2{
+    align-self: center;
+
+}
+
+.bloco1 p {
+    border: 1px solid black;
+    padding: 1rem;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
+    text-indent: 2rem;
+}
+
+/* --------------------------------------------------------- */
+/* fotos e screenshots ------------------------------------- */
+
+.scroll {
+    display: flex;
+    flex-flow: row;
+    min-height: 14rem;
+    width: 100rem;
+    overflow-x: scroll;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 1rem;
+}
+
+.scroll img{
+    width: 28rem;
+    height: 15rem;
+    align-items: center;
+}
+
+.scroll img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+/* -------------------------------------------------------- */
+/* backlog do jogo ------------------------------------- */
+
+.datas {
+    padding-bottom: 5rem;
+}
+.backlog {
+    align-items: center;
+    color: white;
+}
+
+.backlog h2{
+    padding: 2rem;
+}
+.backlog p{ text-indent: 2rem;
+    padding: 1.5rem;
+
+ 
+}
+ 
+.datas em {
+    background-color: #44b0ee;
+    width: fit-content;
+    color: rgb(17, 17, 17);
+}
+
+.dias:hover {
+    background-color: #1a89ca;
+}
+
+/* ------------------------------------------------------- */
+/* todos os .jogo ---------------------------------------- */
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+ 
+    /* border-top: 0.2rem dotted rgb(83, 80, 80);  */
+
+}
+
+.jogo ol {
+    padding-left: 5rem;
+    list-style-type: decimal;
+    
+}
+
+.jogo ul {
+    list-style-type: square;
+    padding-left: 5rem;
+    
+}
+
+.jogo h3, p, iframe{
+    text-indent: 2rem;
+    padding: 1rem;
+}
+
+/* ------------------------------------------------------- */
+
+.mari {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+}
+
+.mari img {
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Permite que a altura da imagem seja ajustada proporcionalmente */
+    border-radius: 8px; /* Adiciona um leve arredondamento às bordas da imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar a imagem */
+    padding-top: 30px;
+}
+
+.mari img:hover {
+    transform: scale(1.1); /* Amplia ligeiramente a imagem ao passar o mouse sobre ela */
+}
+
+/* ------------------------------------------------------- */
+/* icones ------------------------------------------------ */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.icons img {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.9rem;
+}
+
+.icons img:hover {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 1.2rem;
+}
+
+/* ------------------------------------------------------- */
+/* tooltips ------------------------------------------------ */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+    margin-left: 3rem;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20rem;
+    background-color: #cad8d5;
+    color: rgb(74, 72, 72);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-style: italic;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .oldSite {
+    width: 16rem;
+    height: 25rem;
+    padding-left: 4rem;
+  }
+
+  .mudancas {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mudancas p{
+    font-size: small;
+  }
+
+.datasz {
+    padding-bottom: 5rem;
+}
+.introducao {
+    align-items: center;
+    font-size: 25px;
+}
+
+.introducao h2{
+    padding: 2rem;
+}
+.introducao p{ text-indent: 2rem;
+    padding: 0.35rem;
+ 
+}
+ 
+.datasz em {
+    background-color: transparent;
+    color: white;   
+}
+
+.galeria {
+    align-items: center;
+    margin-left: 33px;
+}
+
+.tutorial {
+    align-items: center;
+    margin-left: 35px;
+    color: white;
+}
+
+.gameplayt {
+    align-items: center;
+    margin-left: 36px;
+    color: white;
+}
+
+.heuri {
+    align-items: center;
+    margin-left: 39px;
+    color: white;
+}
+
+.desenvolvedora{
+    align-items: center;
+    margin-left: 40px;
+    color: white;
+}
+/* .diasz:hover {
+    background-color: #1a89ca;
+} */
+
+.titulos  h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+}
+
+.backlog p{
+    align-items: center;
+    font-size: 23px;
+}
+
+.tutorial li, .tutorial p{
+    align-items: center;
+    font-size: 25px;
+}
+
+.gameplay p{
+    align-items: center;
+    font-size: 25px;
+}
+
+.heuri h3, .heuri li{
+    align-items: center;
+    font-size: 24px;
+}
+
+.devs p{
+    align-items: center;
+    font-size: 26px;
+}
